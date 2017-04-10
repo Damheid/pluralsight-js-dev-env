@@ -16,27 +16,10 @@ app.use(require('webpack-dev-middleware')(compiler, {
 }));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, '../src/index.html'));
+	res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 
 app.get('/users', function (req, res) {
-<<<<<<< HEAD
-  res.json([
-    { "id": 1, "firstName": "Bob", "lastName": "Smith", "email": "bob@gmail.com" },
-    { "id": 2, "firstName": "Tammy", "lastName": "Norton", "email": "tnorton@gmail.com" },
-    { "id": 3, "firstName": "Tina", "lastName": "Lee", "email": "lee.tina@gmail.com" }
-  ]);
-});
-
-app.listen(port, function (err) {
-  if (err) {
-    console.log(err);
-  }
-  else {
-    open('http://localhost:' + port);
-  }
-});
-=======
 	res.json([
     {"id": 1, "firstName": "Bob", "lastName": "Smith", "email": "bob@gmail.com" },
     {"id": 2, "firstName": "Tammy", "lastName": "Norton", "email": "tnorton@yahoo.com" },
@@ -52,4 +35,3 @@ app.listen(port, function(err) {
 		open('http://localhost:' + port);
 	}
 });
->>>>>>> d4929640e75291f06bbdd159266179a496d20964

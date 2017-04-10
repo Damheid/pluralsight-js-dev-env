@@ -1,22 +1,4 @@
 import 'whatwg-fetch';
-<<<<<<< HEAD
-
-export function getUsers() {
-  return get("users");
-}
-
-function get(url) {
-  return fetch(url).then(onSuccess, onError);
-}
-
-function onSuccess(response) {
-  return response.json();
-}
-
-function onError(err) {
-  console.log(err); // eslint-disable-line no-console
-}
-=======
 import getBaseUrl from './baseUrl';
 
 const baseUrl = getBaseUrl();
@@ -48,4 +30,3 @@ function onSuccess (response) {
 function onError(error) {
   console.log(error); // eslint-disable-line no-console
 }
->>>>>>> d4929640e75291f06bbdd159266179a496d20964
