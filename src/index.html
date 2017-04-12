@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+	<% if (htmlWebpackPlugin.options.trackJSToken) { %>
+		<!-- Begin TRACKJS -->
+		<script type="text/javascript">
+			window._trackJS = { token: '<%= htmlWebpackPlugin.options.trackJSToken %>' };
+		</script>
+		<script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
+		<!-- END TRACKJS -->
+	<% } %>
 	<meta charset="UTF-8">
 	<title>JS-DEV-ENV</title>
 </head>
+
 <body>
 	<h1>Hello World!</h1>
 	<h2>Users</h2>
@@ -20,4 +30,5 @@
 		</tbody>
 	</table>
 </body>
+
 </html>
